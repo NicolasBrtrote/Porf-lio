@@ -1,73 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                overflow: hidden;
-                }
-                .tiktok-spinner {
-                    position:relative;
-                    height: 2em;
-                    width: 4.1em;
-                }
-                .ball {
-                    position:absolute;
-                    height: 2em;
-                    width: 2em;
-                    border-radius:50%;
-                    mix-blend-mode: multiply;
-                }
-                .ball.red {
-                    left: 0;
-                    background: #f71375;
-                    animation: 0.7s red-move ease-in-out infinite;
-                }
-                .ball.blue { 
-                    right: 0;
-                    background: #37f7f6;
-                    animation: 0.7s blue-move ease-in-out infinite;
-                }
-                @keyframes blue-move {
-                    25% {
-                        transform: scale(0.7);
-                    }
-                    50% {
-                        right: 1.9em;
-                    }
-                    75% {
-                        transform: scale(1.2);
-                    }
-                    100% {
-                        right: 0;
-                    }
-                }
-                    @keyframes red-move {
-                        25% {
-                            transform: scale(1.2);
-                        }
-                        50% {
-                            left: 1.9em;
-                        }
-                        75% {
-                            transform: scale(0.7);
-                        }
-                        100% {
-                            left: 0;
-                        }
-                    }
-                        
-                    
-        </style>
-    </head>
-    <body>
-        <div class="tiktok-spinner">
-        <div class="ball red"></div>
-        <div class="ball blue"></div>
-    </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;  
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        header p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #777;
+        }
+        a {
+            color: #55caf1ee
+        }
+        a:hover {
+            color: #b30000;
+        }
+        ul {
+            padding-left: 20px;
+            color: #555;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nícolas Medeiros de Pinho</h1>
+            <img src="https://cdn.discordapp.com/attachments/779083007399165954/1215834977951023245/5f567e7e-35c8-4a73-a59c-16bb9404b119.jpg?ex=66231b8f&is=6610a68f&hm=1d2ce150c9c5f5b75d165d5beb87a3a6954e92700356baf9bf02befe89ba5835&" alt="não gosto de tirar foto" height="200">
+            <p>Estudante de Ciência da Computação</p>
+        </header>
+
+        <section>
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+            </div>
+            <div class="section-content">
+               <p>Tenho 19 anos e sou estudante de ciências da computação na Uvv, e também espero que <br></p>
+               <p>nesse curso possa aprender a ganhar a vida com a computação, seguindo <br></p>
+               <p> os passos do meu padastro. Sou meio preguiçoso mas sempre <br></p>
+               <p>tento me esforçar ao máximo, na minha antiga escola não tinha o costume de <br></p>
+               <p>estudar muito, então estou me acostumando com a rotina ainda.</p> 
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h2>Experiências</h2>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>Estudante de Ciência da Computação</li>
+                    <li>Formado em 2023 no Colégio CEIC</ui>
+                    <li>30M no Blox Fruits</li>
+                    <li>Inglês mediano</li>
+                    <li>Aprendendo Html e Css</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h2>Tecnologias que domino</h2>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Um pouco de linguagem C</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h2>Contato</h2>
+            </div>
+            <div class="section-content">
+                <p>nicolas23.es@gmail.com</p>
+                <p>+55 (27) 99507-2005</p>
+                <p><a href="https://www.roblox.com/users/360150433/profile?friendshipSourceType=PlayerSearch" target="_blank">Contato</a></p>
+            </div>
+        </section>
+</body>
 </html>
